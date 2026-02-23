@@ -15,7 +15,7 @@ if(state){
 }
 
 // here we will update localstorage on mutations
-store.subscribe((mutation,state)=>{
+store.subscribe((state)=>{
    localStorage.setItem(storageKey,JSON.stringify(state))
 })
 export {store}
